@@ -23,4 +23,5 @@ int main(int argc, char* argv[])
   // TODO11: Check the calculated square root using mathfunctions::OpMul to
   //         square the outputValue. Output the result with the format:
   //           "The square of {} is {}\n"
+  std::cout << std::format("The square of {} is {}\n", outputValue, mathfunctions::OpMul(outputValue, outputValue));
 }
