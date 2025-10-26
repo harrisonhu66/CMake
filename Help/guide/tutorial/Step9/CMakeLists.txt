@@ -22,7 +22,7 @@ endif()
 if(TUTORIAL_BUILD_UTILITIES)
   add_subdirectory(Tutorial)
   # TODO1: Install the Tutorial target
-
+  install(TARGETS Tutorial)
   # TODO3: Add the Tutorial target to the TutorialTargets export
 endif()
 
@@ -38,6 +38,9 @@ add_subdirectory(MathFunctions)
 # TODO2: Install the MathFunctions, OpAdd, OpMul, OpSub, SqrtTable, and
 #        MathLogger targets. Ensure you name their header file set so the
 #        headers will be installed.
+install(TARGETS MathFunctions OpAdd OpMul OpSub SqrtTable MathLogger
+  FILE_SET HEADERS
+)
 
 # TODO5: Add the targets from TODO2 to the TutorialTargets export
 
