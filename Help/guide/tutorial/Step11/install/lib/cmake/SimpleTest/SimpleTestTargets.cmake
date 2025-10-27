@@ -59,6 +59,7 @@ endif()
 add_library(SimpleTest::SimpleTest INTERFACE IMPORTED)
 
 set_target_properties(SimpleTest::SimpleTest PROPERTIES
+  INTERFACE_COMPILE_DEFINITIONS "SIMPLETEST_CONFIG=\$<CONFIG>"
   INTERFACE_COMPILE_FEATURES "cxx_std_20"
   INTERFACE_LINK_LIBRARIES "TransitiveDep::TransitiveDep"
 )
