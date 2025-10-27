@@ -1,11 +1,12 @@
 #include <MathFunctions.h>
 
 // TODO5: Replace the following 5 lines with #include <SimpleTest.h>
-#define TEST(x) namespace
-#define REQUIRE(x)
-int main()
-{
-}
+#include <SimpleTest.h>
+// #define TEST(x) namespace
+// #define REQUIRE(x)
+// int main()
+// {
+// }
 
 TEST("add")
 {
